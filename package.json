@@ -1,0 +1,31 @@
+{
+  "name": "@codemirror/lang-EXAMPLE",
+  "version": "0.1.0",
+  "description": "EXAMPLE language support for CodeMirror",
+  "scripts": {
+    "test": "mocha test/test.js",
+    "prepare": "rollup -c"
+  },
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "exports": {
+    "import": "./dist/index.js",
+    "require": "./dist/index.cjs"
+  },
+  "types": "dist/index.d.ts",
+  "sideEffects": false,
+  "dependencies": {
+    "@codemirror/highlight": "^0.17.0",
+    "@codemirror/language": "^0.17.0",
+    "lezer": "^0.13.0"
+  },
+  "devDependencies": {
+    "@wessberg/rollup-plugin-ts": "^1.3.8",
+    "lezer-generator": "^0.13.0",
+    "mocha": "^7.1.1",
+    "rollup": "^2.35.1",
+    "rollup-plugin-dts": "^2.0.1",
+    "typescript": "^4.1.3"
+  }
+}

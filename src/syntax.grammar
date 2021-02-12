@@ -1,0 +1,24 @@
+@top Program { expression* }
+
+@skip { space | LineComment }
+
+expression {
+  @specialize[@name=Boolean]<Identifier, "true" | "false"> |
+  Identifier |
+  String |
+  Application { "(" expression* ")" }
+}
+
+@tokens {
+  LineComment { ";" ![\n]* }
+
+  Identifier { $[a-zA-Z_0-9]+ }
+
+  String { '"' (!["\\] | "\\" _)* '"' }
+
+  space { std.whitespace+ }
+
+  "(" ")"
+}
+
+@detectDelim
