@@ -3,20 +3,22 @@
 @skip { space | LineComment }
 
 expression {
-  @specialize[@name=Boolean]<Identifier, "true" | "false"> |
   Identifier |
   String |
+  Boolean |
   Application { "(" expression* ")" }
 }
 
 @tokens {
-  LineComment { ";" ![\n]* }
-
-  Identifier { $[a-zA-Z_0-9]+ }
+  Identifier { $[a-zA-Z_\-0-9]+ }
 
   String { '"' (!["\\] | "\\" _)* '"' }
 
-  space { std.whitespace+ }
+  Boolean { "#t" | "#f" }
+
+  LineComment { ";" ![\n]* }
+
+  space { $[ \t\n\r]+ }
 
   "(" ")"
 }

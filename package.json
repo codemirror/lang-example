@@ -27,5 +27,6 @@
     "rollup": "^2.35.1",
     "rollup-plugin-dts": "^2.0.1",
     "typescript": "^4.1.3"
-  }
+  },
+  "license": "MIT"
 }
