@@ -16,17 +16,17 @@
   "types": "dist/index.d.ts",
   "sideEffects": false,
   "dependencies": {
-    "@codemirror/highlight": "^0.17.0",
-    "@codemirror/language": "^0.17.0",
-    "lezer": "^0.13.0"
+    "@codemirror/highlight": "^0.18.4",
+    "@codemirror/language": "^0.18.2",
+    "lezer": "^0.13.5"
   },
   "devDependencies": {
-    "@wessberg/rollup-plugin-ts": "^1.3.8",
-    "lezer-generator": "^0.13.0",
-    "mocha": "^7.1.1",
+    "lezer-generator": "^0.13.4",
+    "mocha": "^9.0.1",
     "rollup": "^2.35.1",
-    "rollup-plugin-dts": "^2.0.1",
-    "typescript": "^4.1.3"
+    "rollup-plugin-dts": "^3.0.2",
+    "rollup-plugin-ts": "^1.4.0",
+    "typescript": "^4.3.4"
   },
   "license": "MIT"
 }
