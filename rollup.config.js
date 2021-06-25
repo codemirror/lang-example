@@ -1,4 +1,4 @@
-import typescript from "@wessberg/rollup-plugin-ts"
+import typescript from "rollup-plugin-ts"
 import {lezer} from "lezer-generator/rollup"
 
 export default {
