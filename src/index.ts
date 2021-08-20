@@ -1,8 +1,8 @@
 import {parser} from "./syntax.grammar"
-import {LezerLanguage, LanguageSupport, indentNodeProp, foldNodeProp, foldInside, delimitedIndent} from "@codemirror/language"
+import {LRLanguage, LanguageSupport, indentNodeProp, foldNodeProp, foldInside, delimitedIndent} from "@codemirror/language"
 import {styleTags, tags as t} from "@codemirror/highlight"
 
-export const EXAMPLELanguage = LezerLanguage.define({
+export const EXAMPLELanguage = LRLanguage.define({
   parser: parser.configure({
     props: [
       indentNodeProp.add({
