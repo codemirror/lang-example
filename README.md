@@ -18,4 +18,4 @@ Things you'll need to do (see the [language support example](https://codemirror.
 
  * Optionally add a license.
 
- * Publish. If you want to use a `@codemirror/lang-...` package name, open an [issue](https://github.com/codemirror/codemirror.next/issues) to ask for npm publish rights for that name.
+ * Publish. The `@codemirror` namespace is not open to third parties, so publish under `codemirror-lang-EXAMPLE` or similar.
