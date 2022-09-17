@@ -16,8 +16,8 @@
   "types": "dist/index.d.ts",
   "sideEffects": false,
   "dependencies": {
-    "@lezer/highlight": "^1.0.0",
     "@codemirror/language": "^6.0.0",
+    "@lezer/highlight": "^1.0.0",
     "@lezer/lr": "^1.0.0"
   },
   "devDependencies": {
@@ -25,7 +25,7 @@
     "mocha": "^9.0.1",
     "rollup": "^2.60.2",
     "rollup-plugin-dts": "^4.0.1",
-    "rollup-plugin-ts": "^2.0.4",
+    "rollup-plugin-ts": "^3.0.2",
     "typescript": "^4.3.4"
   },
   "license": "MIT"
