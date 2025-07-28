@@ -4,9 +4,7 @@
     "target": "es6",
     "module": "es2020",
     "newLine": "lf",
-    "declaration": true,
-    "moduleResolution": "node",
-    "outDir": "dist"
+    "moduleResolution": "node"
   },
   "include": ["src/*.ts"]
 }
